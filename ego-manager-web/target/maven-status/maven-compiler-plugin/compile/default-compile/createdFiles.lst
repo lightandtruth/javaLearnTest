@@ -1,0 +1,4 @@
+com\cdsxt\ego\manager\service\ManagerItemCatService.class
+com\cdsxt\ego\manager\controller\PageController.class
+com\cdsxt\ego\manager\service\impl\ManagerItemCatServiceImpl.class
+com\cdsxt\ego\manager\controller\ItemCatController.class
