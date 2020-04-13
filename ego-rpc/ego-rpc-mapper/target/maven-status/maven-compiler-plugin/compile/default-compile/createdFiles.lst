@@ -1,0 +1,11 @@
+com\cdsxt\ego\rpc\mapper\TbItemParamMapper.class
+com\cdsxt\ego\rpc\mapper\TbOrderItemMapper.class
+com\cdsxt\ego\rpc\mapper\TbUserMapper.class
+com\cdsxt\ego\rpc\mapper\TbItemDescMapper.class
+com\cdsxt\ego\rpc\mapper\TbContentMapper.class
+com\cdsxt\ego\rpc\mapper\TbItemParamItemMapper.class
+com\cdsxt\ego\rpc\mapper\TbContentCategoryMapper.class
+com\cdsxt\ego\rpc\mapper\TbOrderMapper.class
+com\cdsxt\ego\rpc\mapper\TbItemCatMapper.class
+com\cdsxt\ego\rpc\mapper\TbItemMapper.class
+com\cdsxt\ego\rpc\mapper\TbOrderShippingMapper.class

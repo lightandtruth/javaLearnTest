@@ -1,6 +1,8 @@
 package com.cdsxt.ego.rpc.service;
 
 import java.util.List;
+
+import com.cdsxt.ego.beans.EgoResult;
 import com.cdsxt.ego.rpc.pojo.TbItemParamItemExample;
 import com.cdsxt.ego.rpc.pojo.TbItemParamItem;
 public interface TbItemParamItemService{
@@ -28,4 +30,5 @@ public interface TbItemParamItemService{
 
     int updateByPrimaryKey(TbItemParamItem record);
 
+    EgoResult queryByItemCatId(Long id);
 }

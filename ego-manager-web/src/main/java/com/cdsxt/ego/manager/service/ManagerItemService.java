@@ -2,7 +2,9 @@ package com.cdsxt.ego.manager.service;
 
 import com.cdsxt.ego.beans.EgoResult;
 import com.cdsxt.ego.beans.PageResult;
+import com.cdsxt.ego.beans.PictureResult;
 import com.cdsxt.ego.rpc.pojo.TbItem;
+import org.springframework.web.multipart.MultipartFile;
 
 public interface ManagerItemService {
     /**
@@ -27,4 +29,6 @@ public interface ManagerItemService {
     public EgoResult instockItem(Long[]ids);
 
     EgoResult deleteItems(Long[] ids);
+
+    PictureResult uploadImage(MultipartFile file);
 }

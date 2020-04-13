@@ -1,3 +1,11 @@
+com\cdsxt\ego\rpc\service\TbItemParamItemService.class
+com\cdsxt\ego\rpc\service\TbOrderItemService.class
+com\cdsxt\ego\rpc\service\TbOrderService.class
 com\cdsxt\ego\rpc\service\TbContentService.class
+com\cdsxt\ego\rpc\service\TbItemDescService.class
+com\cdsxt\ego\rpc\service\TbItemService.class
 com\cdsxt\ego\rpc\service\TbUserService.class
 com\cdsxt\ego\rpc\service\TbContentCategoryService.class
+com\cdsxt\ego\rpc\service\TbItemParamService.class
+com\cdsxt\ego\rpc\service\TbOrderShippingService.class
+com\cdsxt\ego\rpc\service\TbItemCatService.class

@@ -1,13 +1,16 @@
 package com.cdsxt.ego.manager.service.impl;
 
-import com.cdsxt.ego.beans.EgoResult;
-import com.cdsxt.ego.beans.PageResult;
+import com.cdsxt.ego.beans.*;
 import com.cdsxt.ego.manager.service.ManagerItemService;
 import com.cdsxt.ego.rpc.pojo.TbItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.cdsxt.ego.rpc.service.TbItemService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
 
@@ -51,5 +54,40 @@ public class ManagerItemServiceImpl implements ManagerItemService {
     public EgoResult deleteItems(Long[] ids) {
         List<Long> itemIds = Arrays.asList(ids);
         return itemServiceProxy.deleteItemService(itemIds);
+    }
+
+    @Value("${FTP_HOST}")
+    private String hostname;
+    @Value("${FTP_PORT}")
+    private Integer port;
+    @Value("${FTP_USERNAME}")
+    private String username;
+    @Value("${FTP_PASSWORD}")
+    private String password;
+    @Value("${FTP_PATH}")
+    private String pathname;
+    @Value("${IMAGE_HTTP_PATH}")
+    private String remoteURL;
+    @Override
+    public PictureResult uploadImage(MultipartFile file) {
+        boolean result = false;
+        PictureResult p = new PictureResult();
+        String originalFilename = file.getOriginalFilename();
+        String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));
+        String remote = IDUtil.getImageName() + suffix;
+        try {
+            InputStream inputStream = file.getInputStream();
+            result = FtpUtil.uploadFile(hostname, port, username, password, pathname, inputStream, remote);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(result){
+            p.setError(0);
+            p.setUrl(remoteURL+remote);
+        }else{
+            p.setError(1);
+            p.setMessage("失败");
+        }
+        return p;
     }
 }

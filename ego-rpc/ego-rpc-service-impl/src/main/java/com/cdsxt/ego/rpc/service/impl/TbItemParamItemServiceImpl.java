@@ -1,5 +1,6 @@
 package com.cdsxt.ego.rpc.service.impl;
 
+import com.cdsxt.ego.beans.EgoResult;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
@@ -66,6 +67,15 @@ public class TbItemParamItemServiceImpl implements TbItemParamItemService{
     @Override
     public int updateByPrimaryKey(TbItemParamItem record) {
         return tbItemParamItemMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public EgoResult queryByItemCatId(Long id) {
+
+        TbItemParamItem tbItemParamItem = tbItemParamItemMapper.selectByPrimaryKey(id);
+        EgoResult ok = EgoResult.ok();
+//        ok.setData();
+        return ok;
     }
 
 }

@@ -1,1 +1,6 @@
+com\cdsxt\ego\beans\FtpUtil.class
+com\cdsxt\ego\beans\EgoResult.class
+com\cdsxt\ego\beans\PageResult.class
 com\cdsxt\ego\beans\TreeNode.class
+com\cdsxt\ego\beans\IDUtil.class
+com\cdsxt\ego\beans\PictureResult.class
