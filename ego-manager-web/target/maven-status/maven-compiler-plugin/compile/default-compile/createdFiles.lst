@@ -1,11 +1,8 @@
-com\cdsxt\ego\manager\controller\ItemParamQueryItemCatIdController.class
-com\cdsxt\ego\manager\controller\PageController.class
-com\cdsxt\ego\manager\service\ManagerItemParamQueryItemCatIdService.class
-com\cdsxt\ego\manager\service\impl\ManagerItemServiceImpl.class
-com\cdsxt\ego\manager\service\impl\ManagerItemCatServiceImpl.class
-com\cdsxt\ego\manager\service\impl\ManagerItemParamQueryItemCatIdServiceImpl.class
-com\cdsxt\ego\manager\controller\ItemCatController.class
 com\cdsxt\ego\manager\service\ManagerItemCatService.class
+com\cdsxt\ego\manager\controller\PageController.class
+com\cdsxt\ego\manager\service\impl\ManagerItemServiceImpl.class
 com\cdsxt\ego\manager\controller\ItemImageController.class
 com\cdsxt\ego\manager\controller\ItemController.class
+com\cdsxt\ego\manager\service\impl\ManagerItemCatServiceImpl.class
+com\cdsxt\ego\manager\controller\ItemCatController.class
 com\cdsxt\ego\manager\service\ManagerItemService.class

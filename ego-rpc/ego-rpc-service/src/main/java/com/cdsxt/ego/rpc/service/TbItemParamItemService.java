@@ -29,6 +29,4 @@ public interface TbItemParamItemService{
     int updateByPrimaryKeySelective(TbItemParamItem record);
 
     int updateByPrimaryKey(TbItemParamItem record);
-
-    EgoResult queryByItemCatId(Long id);
 }

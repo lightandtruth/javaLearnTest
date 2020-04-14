@@ -83,7 +83,7 @@ public class ManagerItemServiceImpl implements ManagerItemService {
         }
         if(result){
             p.setError(0);
-            p.setUrl(remoteURL+remote);
+            p.setUrl(remoteURL+"/"+remote);
         }else{
             p.setError(1);
             p.setMessage("失败");

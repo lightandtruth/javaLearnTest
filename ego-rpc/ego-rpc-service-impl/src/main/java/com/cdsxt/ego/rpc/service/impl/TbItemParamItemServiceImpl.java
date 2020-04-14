@@ -68,14 +68,4 @@ public class TbItemParamItemServiceImpl implements TbItemParamItemService{
     public int updateByPrimaryKey(TbItemParamItem record) {
         return tbItemParamItemMapper.updateByPrimaryKey(record);
     }
-
-    @Override
-    public EgoResult queryByItemCatId(Long id) {
-
-        TbItemParamItem tbItemParamItem = tbItemParamItemMapper.selectByPrimaryKey(id);
-        EgoResult ok = EgoResult.ok();
-//        ok.setData();
-        return ok;
-    }
-
 }
